@@ -1,0 +1,165 @@
+/*Formatação básica*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Declaração das cores das variáveis*/
+:root {
+    --cor-preto: #000000;
+    --cor-cinza: #DCDBDB;
+    --cor-branco: white;
+    --cor-azul: rgb(10, 25, 66);
+
+}
+
+/*Estilização do corpo do site*/
+body {
+    background-image: url(fundo/Fundodojogo.jpeg);
+    background-size: 100%;
+    display: flex;
+    margin-left: 50px;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/*Estilização da área do jogo*/
+.container {
+    margin-left: 230px;
+    width: 500px;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/*Espaçamento do título*/
+.spacecont{
+    margin-top: 40%;
+    text-align: center;
+}
+
+/*Estilização do título*/
+h1 {
+    color: var(--cor-branco);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/*Estilização dos parágrafos, do input e dos botões*/
+p, input, button {
+    color: var(--cor-preto);
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 20px;
+    border-radius: 6px;
+    padding: 8px;
+    outline: none;
+}
+
+/*Cor dos lugares que o jogador vai digitar*/
+p{
+    color: var(--cor-branco);
+}
+
+/**/
+output{
+    padding: 10%;
+}
+
+/*Contagem das tentativas feita pelo jogador*/
+.tentativas {
+    margin-top: 30px;
+    text-align: center;
+}
+
+/*Função de reiniciar*/
+.reiniciar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/*copyright*/
+.copyright {
+    margin-top: auto;
+    font-size: 14px;
+    color: var(--cor-branco);
+    font-weight: bold;
+}
+/*Referência dos links  */
+a {
+    text-decoration: none;
+    color: inherit; 
+}
+
+/*Responsividade*/
+
+@media screen and (max-width: 1439px) {
+    .container{
+        width: 450px;
+        height:550px ;
+        margin-left: 160px;
+    }
+}
+
+@media screen and (max-width: 1249px) {
+    .container{
+        margin-left: 110px;
+    }
+}
+
+@media screen and (max-width: 1149px) {
+    .container{
+        width: 400px;
+        height: 500px ;
+        margin-left: 130px;
+    }
+    h1 {
+        margin-top: 55px;
+        font-size: 20px;
+    }
+    p, input, button {
+        font-size: 15px;
+        margin-top: 20px;
+    }
+    .copyright {
+        margin-bottom: 20px;
+    }
+
+
+}
+
+@media screen and (max-width: 1023px) {
+    .container{
+        width: 350px;
+        height: 450px ;
+        margin-left: 150px;
+    }
+    h1 {
+        margin-top: 55px;
+        font-size: 20px;
+    }
+    p, input, button {
+        font-size: 15px;
+        margin-top: 20px;
+    }
+    .copyright {
+        margin-bottom: 20px;
+    }
+
+
+}
+
